@@ -17,6 +17,7 @@ const Portfolio = () => {
     { image: nalie, heading: 'Sedut Perspiciatis', category: 'logo' },
     { image: hitMillion, heading: 'Sed ut Perspiciatis', category: 'mobile' },
   ])
+  const [activeTab, setActiveTab] = useState("all");
   return (
     <div className={styles.PortfolioSection}>
       <div className="container">
@@ -24,31 +25,90 @@ const Portfolio = () => {
         <nav>
           <ul>
             <li>
-              <button>All</button>
+              <button className={`${activeTab === "all" ? "active" : ""}`} onClick={() =>setActiveTab("all")}>All</button>
             </li>
             <li>
-              <button>Logo</button>
+              <button className={`${activeTab === "logo" ? "active" : ""}`} onClick={() =>setActiveTab("logo")}>Logo</button>
             </li>
             <li>
-              <button>Websites</button>
+              <button className={`${activeTab === "websites" ? "active" : ""}`} onClick={() =>setActiveTab("websites")}>Websites</button>
             </li>
             <li>
-              <button>Mobile Apps</button>
+              <button className={`${activeTab === "mobile" ? "active" : ""}`} onClick={() =>setActiveTab("mobile")}>Mobile Apps</button>
             </li>
           </ul>
         </nav>
-        <div className={styles.CardsWrap}>
-          {portfolio.map((item, index) => {
-            return (
-              <Card
-                key={index}
-                img={item.image}
-                heading={item.heading}
-                category={item.category}
-              ></Card>
-            )
-          })}
-        </div>
+        {(() => {
+            switch (activeTab) {
+              case "all":
+                return (
+                  <div className={styles.CardsWrap}>
+                  {portfolio.map((item, index) => {
+                    return (
+                      <Card
+                        key={index}
+                        img={item.image}
+                        heading={item.heading}
+                        category={item.category}
+                      ></Card>
+                    );
+                  })}
+                </div>
+                );
+              case "logo":
+                return (
+                  <div className={styles.CardsWrap}>
+                      <Card
+                          img={abadLogo}
+                          heading={"Sedut Perspiciatis"}
+                          category={"logo"}
+                          ></Card>
+                      <Card
+                          img={nalie}
+                          heading={"Sedut Perspiciatis"}
+                          category={"logo"}
+                          ></Card>
+                      </div>
+                );
+              case "websites":
+                return (
+                  <div className={styles.CardsWrap}>
+                    <Card
+                      img={abadLogo}
+                      heading={"Sed ut Perspiciatis"}
+                      category={"websites"}
+                    />
+                    <Card
+                      img={aprikot}
+                      heading={"Sed ut Perspiciatis"}
+                      category={"websites"}
+                    />
+                    </div>
+                );
+              case "mobile":
+                return (
+                  <div className={styles.CardsWrap}>
+                    <Card
+                      img={pharmacy}
+                      heading={"Sed ut Perspiciatis"}
+                      category={"mobile"}
+                    />
+                    <Card
+                      img={hitMillion}
+                      heading={"Sed ut Perspiciatis"}
+                      category={"mobile"}
+                    />
+                    </div>
+                );
+              default:
+                return activeTab;
+            }
+          })()}
+        
+               
+                   
+              
+        
       </div>
     </div>
   )
