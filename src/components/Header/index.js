@@ -9,7 +9,7 @@ import Pinterest from '../../assets/images/pinterest.png'
 
 const Header = () => {
   return (
-    <div className={styles.heroSection}>
+    <div className={styles.headSection}>
       <div className="container">
       <div className={styles.HeaderWrap}>
           <div>
@@ -32,7 +32,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.heroWrap}>
+        <div className={styles.headWrap}>
           <h6>Hello, I am</h6>
           <h1>Mark</h1>
           <h1>Reccardo</h1>
