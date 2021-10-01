@@ -1,0 +1,32 @@
+.CapabilityCard{
+    display: flex;
+    flex-direction: column;
+    max-width: 327px;
+    width: 100%;
+    margin-right: 147px;
+    margin-bottom: 176px;
+}
+.CapabilityCard:nth-child(3n+3)
+{
+    margin-right: 0;
+}
+.CapabilityCard .ImgWrap{
+    text-align: center;
+}
+.CapabilityCard h3{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 44px;
+    color: white;
+    text-align: center;
+}
+.CapabilityCard P{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 44px;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}

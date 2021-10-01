@@ -1,0 +1,141 @@
+.client {
+  background-color: #040221;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.client_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.client_txt h1 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.client_txt .client_line {
+  width: 150px;
+  height: 1px;
+  background-color: #ff0513;
+  margin-bottom: 25px;
+}
+.client_txt p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 35px;
+}
+.client_imgs {
+  background-image: url("../../assets/images/map.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 50%;
+  width: 800px;
+  height: 400px;
+  position: relative;
+  /* margin-right: 50px; */
+}
+.FirstImage {
+  width: 116px;
+  position: absolute;
+  left: 25px;
+  border: 5px solid transparent;
+}
+.SecImage {
+  width: 125px;
+  position: absolute;
+  left: 230px;
+  top: 52px;
+  border: 5px solid transparent;
+}
+.ThirdImage {
+  width: 187px;
+  position: absolute;
+  left: 414px;
+  top: -54px;
+  border: 5px solid transparent;
+}
+.FourthImage {
+  width: 96px;
+  position: absolute;
+  top: 125px;
+  left: 80px;
+  border: 5px solid transparent;
+}
+.FifthImage {
+  width: 187px;
+  position: absolute;
+  right: 65px;
+  bottom: 46px;
+  border: 5px solid transparent;
+}
+.SixthImage {
+  width: 166px;
+  position: absolute;
+  top: 210px;
+  left: 137px;
+  border: 5px solid transparent;
+}
+.client_imgs>img:hover {
+  border: 5px solid red;
+  border-radius: 50%;
+}
+
+.client_portfolio {
+  display: flex;
+}
+.client_data {
+  max-width: 50%;
+  width: 100%;
+}
+.client_data p::before {
+  content: "";
+  background-image: url("../../assets/images/equal.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 74px;
+  height: 150px;
+  top: -87px;
+  left: -15px;
+}
+.client_data p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  max-width: 490px;
+  margin: 0 auto;
+  line-height: 30px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.CEOName{
+  margin: 100px;
+}
+
+.client_data p::after {
+  content: "";
+  background-image: url("../../assets/images/equal.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 74px;
+  height: 150px;
+  top: 120px;
+  right: 185px;
+}
+h3 {
+  color: #fff;
+  margin-left: 65px;
+}
+h5 {
+  color: #fff;
+  margin-left: 65px;
+}
+

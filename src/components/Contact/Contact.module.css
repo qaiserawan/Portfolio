@@ -1,0 +1,91 @@
+.form_inline {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form_inline input {
+      margin: 10px 20px 15px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    max-width: 45%;
+    width: 100%;
+  }
+  .form_inline select {
+      margin: 10px 20px 15px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    max-width: 45%;
+    width: 100%;
+  }
+  .form_inline textarea {
+      margin: 10px 20px 30px 0;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #707070;
+      width: 584px;
+      height: 100px;
+    }
+
+    .contact {
+      background-color: #040b33;
+      padding-bottom: 100px;
+    }
+    .contact_txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .contact_line {
+      border-left: 1px solid #ff0513;
+      height: 100px;
+      left: 50%;
+      margin-bottom: 25px;
+    }
+    .contact_txt h1 {
+      font-family: "Poppins";
+    font-weight: bold;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 25px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .contact_txt p {
+      font-family: "Poppins";
+    font-weight: bold;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 300;
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 35px;
+    }
+    .contact_form {
+      margin-top: 40px;
+    }
+.HireBtn{
+    max-width: 153px;
+    width: 100%;
+    padding: 9px 25px;
+    background-color: #040B33;
+    border: 2px solid #ffffff;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
+}    
+
+.BtnHire{
+  display: flex;
+  justify-content: center;
+}

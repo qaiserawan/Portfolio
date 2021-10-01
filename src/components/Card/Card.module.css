@@ -1,0 +1,59 @@
+.Card {
+    height: 510px;
+    max-width: 33.33%;
+    width: 100%;
+    border-radius: 40px;
+    margin-bottom: 105px;
+    padding: 0px 50px;
+  }
+  .CardInner {
+    position: relative;
+  }
+  .CardInner:hover {
+    transform: scaleY(1.091);
+    transition: 0.5s ease;
+  }
+  .CardInner:hover .CardHover {
+    opacity: 1;
+  }
+  .CardHover {
+    position: absolute;
+    top: 0;
+    background: rgb(255, 0, 0, 0.82);
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    border-radius: 40px;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+  .CardHover h3 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 44px;
+    color: white;
+    line-height: 44px;
+  }
+  .CardHover p {
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 25px;
+    color: white;
+    line-height: 55px;
+  }
+  .CardHover .HoverText {
+    padding-left: 56px;
+    padding-bottom: 44px;
+    max-width: 327px;
+    width: 100%;
+  }
+  .Card img {
+    width: 100%;
+    height: 509px;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+  

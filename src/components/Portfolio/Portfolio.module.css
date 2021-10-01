@@ -1,0 +1,44 @@
+.PortfolioSection {
+    background-color: #040221;
+    padding-top: 92px;
+    padding-bottom: 69px;
+  }
+  .PortfolioSection h2 {
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 67px;
+    color: #fff;
+    padding-bottom: 27px;
+  }
+  .PortfolioSection nav {
+    margin-bottom: 130px;
+  }
+  .PortfolioSection ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 488px;
+    width: 100%;
+  }
+  .PortfolioSection nav button {
+    border: 0px;
+    background: transparent;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  .PortfolioSection nav button:hover,
+  .PortfolioSection nav button:active {
+    color: #ff0513;
+  }
+  
+  .PortfolioSection .CardsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0px -50px;
+  }
+  
